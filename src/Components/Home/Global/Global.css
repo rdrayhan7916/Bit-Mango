@@ -1,0 +1,20 @@
+.gImg {
+    width: 80%;
+}
+
+.submit {
+    margin-top: 40px;
+    color: white;
+    font-weight: 600;
+    border: 0px;
+    font-family: "Montserrat", Sans-serif;
+    background-color: #E98F16;
+    background-image: none;
+    border-radius: 30px 30px 30px 30px;
+    padding: 20px 60px 20px 60px;
+}
+
+.gr {
+    margin-top: 100px !important;
+    margin-bottom: 50px;
+}

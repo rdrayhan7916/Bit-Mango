@@ -1,0 +1,11 @@
+.btn-job {
+    margin-top: 40px;
+    color: white;
+    font-weight: 600;
+    border: 0px;
+    font-family: "Montserrat", Sans-serif;
+    background-color: #E98F16;
+    background-image: none;
+    border-radius: 30px 30px 30px 30px;
+    padding: 20px 60px 20px 60px;
+}

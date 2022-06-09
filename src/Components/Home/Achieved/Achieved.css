@@ -1,0 +1,24 @@
+.a-text {
+    font-weight: 500;
+    padding-top: 50px;
+    margin-bottom: 40px;
+    font-family: sans-serif;
+}
+
+.a-title {
+    color: #FFB700;
+}
+
+h5 {
+    color: darkgrey;
+}
+
+.activity {
+    margin-top: 50px;
+
+}
+
+.gain {
+    color: #FFB700;
+    font-size: 70px;
+}
