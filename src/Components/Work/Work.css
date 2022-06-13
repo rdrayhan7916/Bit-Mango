@@ -1,0 +1,21 @@
+.work-banner {
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRR_fRSYyv17iDYxWocJB-Se_vjQfBj8cjm6w&usqp=CAU);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: block;
+    padding-top: 300px;
+    padding-bottom: 300px;
+}
+
+.hw {
+    font-family: "Montserrat", Sans-serif;
+    font-size: 70px;
+    font-weight: 500;
+    line-height: 1.4em;
+    color: azure;
+}
+
+.ww {
+    text-align: start;
+    margin-top: 30px;
+}

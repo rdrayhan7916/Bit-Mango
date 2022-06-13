@@ -1,0 +1,40 @@
+.c-g-1 {
+    font-family: "Montserrat", Sans-serif;
+    font-size: 51px;
+    font-weight: 500;
+    line-height: 1.2em;
+    text-align: start;
+    margin-top: 50px;
+}
+
+.global-no {
+    text-align: start;
+}
+
+.core-box-div {
+    margin-top: 50px;
+}
+
+.core-box {
+    box-shadow: 0px 0px 24px 8px rgb(20 20 40 / 10%);
+    margin: 10px 20px 10px 20px;
+    padding: 10px;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+}
+
+.core-title {
+    color: #EE751D;
+    font-family: "Montserrat", Sans-serif;
+    font-size: 24px;
+    line-height: 1.5em;
+}
+
+p {
+
+    font-family: "Montserrat", Sans-serif;
+    font-size: 16px;
+
+}

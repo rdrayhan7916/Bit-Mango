@@ -4,6 +4,7 @@ import A1 from '../../../img/스크린샷-2022-04-21-오ᄌ
 import A2 from '../../../img/스크린샷-2022-04-21-오전-9.46.15.png'
 import A3 from '../../../img/스크린샷-2022-04-21-오전-9.47.20.png'
 import { Container } from 'react-bootstrap';
+import CountUp from 'react-countup';
 
 const Achieved = () => {
     return (
@@ -38,7 +39,7 @@ const Achieved = () => {
                             src={A1}
                             alt=''
                         />
-                        <h1 className='gain'>2.7M+</h1>
+                        <h1 className='gain'> <CountUp duration={10} start={0.0} end={2.7} decimal='.' decimals={1} /> M+</h1>
                         <h3>Daily Active Users</h3>
                     </div>
                     <div className='col'>
@@ -46,7 +47,7 @@ const Achieved = () => {
                             src={A2}
                             alt=''
                         />
-                        <h1 className='gain pt-2'>710M+</h1>
+                        <h1 className='gain pt-2'> <CountUp duration={10} start={0} end={710} /> M+</h1>
                         <h3>Cumulative Downloads</h3>
                     </div>
                     <div className='col'>
@@ -54,7 +55,7 @@ const Achieved = () => {
                             src={A3}
                             alt=''
                         />
-                        <h1 className='gain'>200+</h1>
+                        <h1 className='gain'><CountUp duration={10} start={0} end={200} />+</h1>
                         <h3 className=''>
                             Global Launching Countries</h3>
                     </div>

@@ -1,0 +1,28 @@
+.footer {
+    background-color: #1a1c20;
+    margin-top: 100px;
+    color: aliceblue;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.f-logo {
+    color: aliceblue;
+    margin-right: 20px;
+    padding-right: 20px;
+}
+
+.footer-hr {
+    width: 90% !important;
+}
+
+.f-com {
+    text-align: start;
+    margin-left: 20px !important;
+}
+
+.f-link {
+    text-decoration: none;
+    color: aliceblue;
+    text-align: start;
+}

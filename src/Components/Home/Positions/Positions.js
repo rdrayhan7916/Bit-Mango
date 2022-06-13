@@ -54,7 +54,7 @@ const Positions = () => {
             </Container>
             <button className='btn-job'>VIEW JOBS LISTINGS</button>
 
-            <hr className='mx-auto gr' />
+
         </div>
     );
 };

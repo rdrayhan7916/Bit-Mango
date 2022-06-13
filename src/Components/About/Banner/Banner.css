@@ -1,0 +1,24 @@
+.about-banner {
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQziRtjDhJwzOV5cc5U8m__qZhITRe3qIVRIA&usqp=CAU);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: block;
+    padding-top: 300px;
+    padding-bottom: 300px;
+}
+
+.a-we {
+    font-family: "Montserrat", Sans-serif;
+    font-size: 70px;
+    font-weight: 500;
+    line-height: 1.4em;
+    color: azure;
+}
+
+.a-hit {
+    color: #EE751D;
+    font-family: "Montserrat", Sans-serif;
+    font-size: 70px;
+    font-weight: 500;
+    line-height: 1.2em;
+}
