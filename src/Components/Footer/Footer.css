@@ -26,3 +26,9 @@
     color: aliceblue;
     text-align: start;
 }
+
+.footer-icon {
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+}

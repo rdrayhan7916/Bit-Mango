@@ -1,10 +1,11 @@
 .about-banner {
-    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQziRtjDhJwzOV5cc5U8m__qZhITRe3qIVRIA&usqp=CAU);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    display: block;
-    padding-top: 300px;
-    padding-bottom: 300px;
+    position: relative;
+
+}
+
+.a-img {
+    width: 100%;
+
 }
 
 .a-we {
@@ -13,6 +14,10 @@
     font-weight: 500;
     line-height: 1.4em;
     color: azure;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .a-hit {

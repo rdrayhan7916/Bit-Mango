@@ -5,6 +5,7 @@ import A2 from '../../../img/스크린샷-2022-04-21-오ᄌ
 import A3 from '../../../img/스크린샷-2022-04-21-오전-9.47.20.png'
 import { Container } from 'react-bootstrap';
 import CountUp from 'react-countup';
+import { Link } from 'react-router-dom';
 
 const Achieved = () => {
     return (
@@ -62,7 +63,7 @@ const Achieved = () => {
                 </div>
             </Container>
 
-            <button className='btn-show'>LEARN MORE</button>
+            <button className='btn-show'><Link to='/about' className='link-jobs-btn'>LEARN MORE</Link> </button>
             <hr className='mx-auto' />
         </div>
     );

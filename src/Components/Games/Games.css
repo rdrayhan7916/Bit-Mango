@@ -13,4 +13,9 @@
 .gm {
     margin-top: 100px;
     margin-bottom: 70px;
+    width: 100%;
+}
+
+.des {
+    width: 60%;
 }

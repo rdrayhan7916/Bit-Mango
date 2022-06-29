@@ -1,0 +1,12 @@
+.dlt-btn {
+    margin-left: 2rem;
+    border: 0px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    font-size: 1.5rem;
+    background-color: rgb(170, 18, 18);
+    color: antiquewhite;
+    border-radius: 10px;
+}

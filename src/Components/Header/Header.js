@@ -25,12 +25,13 @@ const Header = () => {
                     <Nav className="me-auto nav-items w-100">
 
                         <Nav.Link className='me-5' >
-                            <Link to='about' className='link'> ABOUT US</Link></Nav.Link>
+                            <Link to='/about' className='link'> ABOUT US</Link></Nav.Link>
                         <Nav.Link className='me-5' ><Link to='games' className='link'> GAMES</Link></Nav.Link>
                         <Nav.Link className='me-5'><Link to='work' className='link'> HOW WE WORK</Link></Nav.Link>
                         <Nav.Link className='me-5'><Link to='publishing' className='link'> PUBLISHING</Link></Nav.Link>
                         <Nav.Link className='me-5' ><Link to='jobs' className='link'> JOBS</Link></Nav.Link>
                         <Nav.Link className='me-5'><Link to='contact' className='link'> CONTACT</Link></Nav.Link>
+                        {/* <Nav.Link className='me-5'><Link to='login' className='link'> Login</Link></Nav.Link> */}
                         <Nav.Link className='me-5' >
                             <img
                                 src={country}

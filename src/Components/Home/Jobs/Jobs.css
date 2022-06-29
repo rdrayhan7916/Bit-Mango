@@ -1,0 +1,62 @@
+.j-banner {
+    background-image: url(../../../img/jobs-bg.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: block;
+    padding-top: 300px;
+    padding-bottom: 300px;
+}
+
+.j-text {
+    font-family: "Montserrat", Sans-serif;
+    font-size: 70px;
+    font-weight: 500;
+    line-height: 1.4em;
+    color: azure;
+}
+
+.nd {
+    margin-top: 4rem;
+}
+
+.jb-btn {
+    border: none;
+    padding-right: 98px;
+    padding-left: 98px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: rgb(216, 200, 200);
+
+}
+
+.bnt-grp {
+    background-color: rgb(216, 200, 200);
+    border-radius: 10px 10px 0px 0px;
+}
+
+.jb-btn:hover {
+    background-color: rgb(68, 68, 68);
+    color: aliceblue;
+}
+
+.pro-text {
+    text-align: start;
+    margin-top: 1rem;
+
+}
+
+.pro-btn {
+    border: none;
+    border-radius: 5px;
+    text-align: right;
+    margin-top: 1rem;
+
+    color: #666;
+    background-color: #ebebeb;
+    font-size: 14px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 70%;
+}

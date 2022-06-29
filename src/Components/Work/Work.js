@@ -1,8 +1,16 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Container } from 'react-bootstrap';
-import COO from '../../img/COO.png'
 import './Work.css'
+
+
 const Work = () => {
+    const [coo, setCoo] = useState([])
+    useEffect(() => {
+        fetch('http://localhost:5000/coo')
+            .then(res => res.json())
+            .then(data => setCoo(data[0]))
+    }, [])
+
     return (
         <div>
             <div className='work-banner'>
@@ -10,12 +18,18 @@ const Work = () => {
             </div>
             <Container>
                 <h2 className=' mb-5 ww'>Who We Are</h2>
-                <h4 className=' ww'>COO| James Cho</h4>
+                <h4 className=' ww'>COO| {coo.name}</h4>
                 <img
-                    src={COO}
+                    src={coo.img}
                     alt=''
                 />
+                <div className='video'>
+
+                    <iframe width="1120" height="630" src="https://www.youtube.com/embed/6smIjIbjXn8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                </div>
             </Container>
+
         </div>
     );
 };

@@ -1,0 +1,24 @@
+.addminRoute {
+    background-color: rgb(213, 213, 236);
+    height: 100%;
+}
+
+.ne-link {
+    text-align: start;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: black;
+    padding-left: 2rem;
+}
+
+.ad {
+    width: 100%;
+}
+
+.ne-link:hover {
+    color: orangered;
+}
+
+.admin-part {
+    margin-top: 5rem;
+}

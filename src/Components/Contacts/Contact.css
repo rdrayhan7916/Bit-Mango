@@ -1,0 +1,41 @@
+.contact-banner {
+    background-image: url(../../img/contact-bg.jfif);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: block;
+    padding-top: 300px;
+    padding-bottom: 300px;
+}
+
+.con-dec {
+    margin-top: 5rem;
+}
+
+.con-text {
+    text-align: start;
+}
+
+
+.c-btn {
+
+    border: 0;
+    font-family: "Montserrat", Sans-serif;
+    background-color: #E98F16;
+    background-image: none;
+    border-radius: 30px 30px 30px 30px;
+    padding: 15px 60px 15px 60px;
+    color: white;
+    font-weight: 600;
+}
+
+.co-btn {
+
+    border: 0;
+    font-family: "Montserrat", Sans-serif;
+    background-color: #E98F16;
+    background-image: none;
+    border-radius: 30px 30px 30px 30px;
+    padding: 15px 79px 15px 79px;
+    color: white;
+    font-weight: 600;
+}

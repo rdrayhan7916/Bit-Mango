@@ -36,7 +36,21 @@ const Footer = () => {
 
                     </div>
                     <div className='col'>
-                        <i class="fa-brands fa-facebook me-2"></i><i class="fa-brands fa-youtube-square me-2"></i><i class="fa-brands fa-linkedin me-2"></i><i class="fa-brands fa-instagram-square me-2"></i>
+                        <a className='footer-icon' href='https://www.facebook.com/' target='_blank' rel='noreferrer'>   <i class="fa-brands fa-facebook me-2"></i>
+                        </a>
+                        <a className='footer-icon' href='https://www.facebook.com/' target='_blank' rel='noreferrer'>   <i class="fa-brands fa-youtube-square me-2"></i>
+                        </a>
+                        <a className='footer-icon' href='https://www.facebook.com/' target='_blank' rel='noreferrer'>
+                            <i class="fa-brands fa-linkedin me-2"></i>
+                        </a>
+                        <a className='footer-icon' href='https://www.facebook.com/' target='_blank' rel='noreferrer'>   <i class="fa-brands fa-instagram-square me-2"></i>
+                        </a>
+
+
+
+
+
+
                     </div>
                 </div>
             </Container>

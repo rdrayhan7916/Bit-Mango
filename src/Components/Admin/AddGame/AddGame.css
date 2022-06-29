@@ -1,0 +1,23 @@
+.add {
+    width: 50%;
+    height: 3rem;
+    margin-bottom: 4px;
+}
+
+.add-t {
+    width: 50%;
+    height: 5rem;
+}
+
+.sub-btn {
+    padding: 0.5rem 2rem;
+    border: 0;
+    background-color: darkorange;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    color: aliceblue;
+}
+
+.sub-btn:hover {
+    background-color: chocolate;
+}

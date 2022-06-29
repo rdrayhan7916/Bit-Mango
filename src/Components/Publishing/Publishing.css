@@ -1,0 +1,55 @@
+.pb-banner {
+    background-image: url(../../img/스크린샷-2022-04-21-오전-9.54.54-1536x1275.png);
+    background-color: antiquewhite;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: block;
+    padding-top: 300px;
+    padding-bottom: 200px;
+
+}
+
+.p-hit {
+    color: #EE751D;
+    font-family: "Questrial", Sans-serif;
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 1.2em;
+
+}
+
+.btn-sub {
+    border: 0;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    font-family: "Montserrat", Sans-serif;
+    background-color: #E98F16;
+    background-image: none;
+    border-radius: 30px 30px 30px 30px;
+    padding: 20px 60px 20px 60px;
+    color: white;
+    font-weight: 600;
+}
+
+.btn-sub:hover {
+    background-color: transparent;
+}
+
+.grimg {
+    height: 400px;
+}
+
+.creat-dec {
+    text-align: start;
+}
+
+.wcw {
+    text-align: start;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    font-weight: 700;
+}
+
+.icon {
+    color: rgb(36, 36, 112);
+}
