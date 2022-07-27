@@ -26,7 +26,7 @@ const Games = () => {
 
             <div>
 
-                <div className='row gx-5 gy-5 gm'>
+                <div className='row game-row gx-5 gy-5 gm'>
 
 
                     {

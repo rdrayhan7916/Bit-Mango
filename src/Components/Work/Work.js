@@ -22,10 +22,11 @@ const Work = () => {
                 <img
                     src={coo.img}
                     alt=''
+                    className='ceo-img'
                 />
                 <div className='video'>
 
-                    <iframe width="1120" height="630" src="https://www.youtube.com/embed/6smIjIbjXn8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe className='wv' width="1120" height="630" src="https://www.youtube.com/embed/6smIjIbjXn8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
                 </div>
             </Container>

@@ -1,6 +1,7 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import { useForm } from 'react-hook-form';
+import { Link } from 'react-router-dom';
 
 const Addcore = () => {
     const [value, setValue] = useState([])
@@ -39,13 +40,27 @@ const Addcore = () => {
                 <input type="submit" />
             </form>
             <h1 className=' mt-5'>Core Value Delete</h1>
-            <div className='row g-5 core-box-div'>
-                {value.map(valu => <div className='col-3 core-box'>
-                    <h3 className='mt-3 mb-5 core-title'>{valu.title}</h3>
-                    <h5>{valu.description}</h5>
-                    <button onClick={() => coreDelete(valu._id)} className='dlt-btn'>DELETE</button>
-                </div>)}
-            </div>
+            <table className="table table-dark table-hover">
+                <thead>
+                    <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">Game Name</th>
+
+                        <th scope="col">Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    {value.map(game => <tr><th scope="row">{game._id.slice(-3)}</th>
+                        <td>{game.title}</td>
+
+                        <td>
+                            <Link to={`updatecore/${game._id}`}> <button type="button" className="btn btn-primary"><i class="fa-solid fa-pen-to-square"></i></button></Link>
+                            <button onClick={() => coreDelete(game._id)} type="button" className="btn btn-danger ms-2"><i class="fa-solid fa-trash"></i></button>
+
+                        </td> </tr>)}
+                </tbody>
+            </table>
         </div>
     );
 };

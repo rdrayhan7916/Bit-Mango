@@ -14,14 +14,14 @@ const Publishing = () => {
                 <h2 className='p-hit'>to global success with BitMango!</h2>
                 <button className='btn-sub'>SUBMIT YOUR GAME</button>
             </div>
-            <Container>
-                <div className='row mt-5'>
+            <Container >
+                <div className='row p-row mt-5'>
                     <div className='col-6 creat-dec'>
                         <h2>We help studios create great games.</h2>
                         <p>With more than 3.7 million users daily, and almost 900 million downloads with our 100 + games, we are a successful game publisher.</p>
                         <p>We are now looking for amazing studios who can partner with us to publish great games and make them successful globally. Join us in our exciting journey to make your great games available to global users.</p>
                     </div>
-                    <div className='col-6'>
+                    <div className='img-col col-6'>
                         <img
                             src={grimg}
                             alt=""

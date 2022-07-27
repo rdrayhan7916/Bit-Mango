@@ -16,7 +16,7 @@ const Positions = () => {
             <h1 className='f-text'>Open Positions</h1>
 
             <Container>
-                <div className='row'>
+                <div className='row f-row'>
                     {
                         positions.map(position => <div className='col'>
                             <img

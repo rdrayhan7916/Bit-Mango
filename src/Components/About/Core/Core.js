@@ -43,11 +43,11 @@ const Core = () => {
                 <img
                     src={ceo.img}
                     alt=''
-                    className='mb-5'
+                    className='mb-5 ceo-img'
                 />
 
                 <h1 className='c-g-1 mt-5'>Core Value</h1>
-                <div className='row g-5 core-box-div'>
+                <div className='row f-row g-5 core-box-div'>
                     {value.map(valu => <div className='col-3 core-box'>
                         <h3 className='mt-3 mb-5 core-title'>{valu.title}</h3>
                         <h5>{valu.description}</h5>

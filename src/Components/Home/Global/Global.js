@@ -8,7 +8,7 @@ const Global = () => {
         <div>
             <h1 className='f-text'>Want Your Game to Go Global?</h1>
             <Container>
-                <div className='row'>
+                <div className='row global-row'>
                     <div className='col'>
                         <img
                             src={GImg}

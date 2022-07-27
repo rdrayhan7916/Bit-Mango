@@ -6,22 +6,22 @@ import country from '../../img/download (1).png'
 import { Link } from 'react-router-dom';
 const Header = () => {
     return (
-        <div>
-            <Navbar className='ms-5 mt-2' collapseOnSelect expand="lg" bg="light" variant="light">
+        <div className='header'>
+            <Navbar className='nav-h ms-5 mt-2' collapseOnSelect expand="lg" bg="light" variant="light">
 
                 <Navbar.Brand >
                     <Link to='home'>
                         <img
                             src={logo}
 
-                            className="d-inline-block align-top me-5"
+                            className="d-inline-block align-top me-5 logo"
                             alt="LOGO"
                         />
                     </Link>
 
                 </Navbar.Brand>
-                <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-                <Navbar.Collapse id="responsive-navbar-nav">
+                <Navbar.Toggle className='tgl' aria-controls="responsive-navbar-nav" />
+                <Navbar.Collapse className='' id="responsive-navbar-nav">
                     <Nav className="me-auto nav-items w-100">
 
                         <Nav.Link className='me-5' >
@@ -46,6 +46,7 @@ const Header = () => {
             </Navbar>
 
         </div>
+
     );
 };
 

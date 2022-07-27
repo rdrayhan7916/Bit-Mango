@@ -1,6 +1,9 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import { useForm } from 'react-hook-form';
+import './AddFetiredGame.css'
+import { Link } from 'react-router-dom';
+
 
 const AddFetureGame = () => {
     const { register, handleSubmit, reset } = useForm();
@@ -9,7 +12,7 @@ const AddFetureGame = () => {
         fetch('http://localhost:5000/featuredgames')
             .then(res => res.json())
             .then(data => setFgames(data))
-    }, [])
+    }, [fgames])
     const fGameDelete = id => {
         console.log(id)
         const url = `http://localhost:5000/fgamedlt/${id}`
@@ -17,6 +20,7 @@ const AddFetureGame = () => {
             method: 'DELETE'
         })
             .then(res => res.json())
+        alert("Featured Game Successfully Deleted")
     }
 
     const onSubmit = data => {
@@ -35,24 +39,28 @@ const AddFetureGame = () => {
                 <input className='add' placeholder='Featured Game Name' {...register("name")} /> <br />
                 <input className='add' placeholder='Img url' {...register("img")} /><br />
 
-                <input type="submit" />
+                <input className='sub-btn' type="submit" />
             </form>
-            <h1 className='f-text'> Featured Games Delete</h1>
-            <div className='row ms-5 me-5'>
+            <table className="table table-dark table-hover mt-5">
+                <thead>
+                    <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">Game Name</th>
+                        <th scope="col">Action</th>
+                    </tr>
+                </thead>
+                <tbody>
 
-                {
-                    fgames.map(gmae => <div className='col'>
-                        <img
-                            src={gmae.img}
-                            alt=""
-                            className='fImg'
-                        />
-                        <h5 className='mt-3 text-dark'>{gmae.name}</h5>
-                        <button onClick={() => fGameDelete(gmae._id)} className='dlt-btn'>DELETE</button>
-                    </div>)
-                }
+                    {fgames.map(game => <tr><th scope="row">{game._id.slice(-3)}</th>
+                        <td>{game.name}</td>
 
-            </div>
+                        <td>
+                            <Link to={`updatefgame/${game._id}`}> <button type="button" className="btn btn-primary"><i class="fa-solid fa-pen-to-square"></i></button></Link>
+                            <button onClick={() => fGameDelete(game._id)} type="button" className="btn btn-danger ms-2"><i class="fa-solid fa-trash"></i></button>
+
+                        </td> </tr>)}
+                </tbody>
+            </table>
         </div>
     );
 };

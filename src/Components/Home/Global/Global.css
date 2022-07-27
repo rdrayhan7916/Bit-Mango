@@ -18,3 +18,17 @@
     margin-top: 100px !important;
     margin-bottom: 50px;
 }
+
+/* Extra small devices (phones, 600px and down) */
+
+@media only screen and (max-width: 600px) {
+    .global-row {
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    .gImg {
+        width: 80%;
+        margin-bottom: 2rem;
+    }
+}

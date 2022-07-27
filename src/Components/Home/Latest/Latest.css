@@ -1,3 +1,38 @@
 .limg {
     border-radius: 20px;
 }
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .limg {
+        width: 90%;
+        margin-bottom: 2rem;
+    }
+
+    .f-row {
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    .home {
+        width: 100%;
+
+    }
+
+    .header {
+        width: 100%;
+    }
+
+    .core-box {
+        width: 85%;
+    }
+
+    .ceo-img {
+        width: 100%;
+    }
+
+    .a-we {
+        font-size: medium;
+    }
+}

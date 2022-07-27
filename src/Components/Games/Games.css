@@ -19,3 +19,40 @@
 .des {
     width: 60%;
 }
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .game-col {
+        display: grid !important;
+        grid-template-columns: auto !important;
+    }
+
+    .game-link {
+        display: grid !important;
+        grid-template-columns: auto !important;
+    }
+
+    .game-text {
+        width: 200px;
+        margin-top: 2rem;
+        justify-content: center;
+        margin-left: 0px !important;
+
+    }
+
+    .gg {
+        margin-bottom: 5px;
+    }
+
+
+    .wv {
+        width: 80% !important;
+        height: 100% !important;
+    }
+
+    .work-banner {
+        padding: 0px !important;
+    }
+
+
+}

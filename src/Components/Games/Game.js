@@ -4,27 +4,28 @@ import apple from '../..//img/apple-ios.png'
 const Game = ({ game }) => {
     const { name, img, description } = game
     return (
-        <div className='col-5 d-flex justify-content-between ms-5'>
-            <div className=''>
+        <div className='col-5 game-col d-flex justify-content-between ms-5'>
+            <div className='img-part'>
                 <img
                     src={img}
                     alt=""
 
+
                 />
             </div>
-            <div className='ms-5'>
+            <div className='ms-5 game-text'>
                 <h4 className='text-start'>{name}</h4>
                 <p className='text-start'>{description}</p>
 
-                <div className='d-flex justify-content-between'>
-                    <a href='www.google.com' target="balank">
+                <div className='game-link d-flex justify-content-between'>
+                    <a href='www.google.com' target="blank">
                         <img
                             src={google}
                             alt=""
-                            className=' me-2'
+                            className=' me-2 gg'
                         />
                     </a>
-                    <a href='www.google.com' target="balank">
+                    <a href='www.google.com' target="blank">
                         <img
                             src={apple}
                             alt=""

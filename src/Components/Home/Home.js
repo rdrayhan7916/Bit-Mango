@@ -8,7 +8,7 @@ import Positions from './Positions/Positions';
 
 const Home = () => {
     return (
-        <div>
+        <div className='home'>
             <Slider></Slider>
             <Featured></Featured>
             <Achieved></Achieved>

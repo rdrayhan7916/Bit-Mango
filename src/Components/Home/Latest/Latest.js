@@ -13,7 +13,7 @@ const Latest = () => {
         <div>
             <h1 className='f-text'>Latest Posts</h1>
             <Container>
-                <div className='row'>
+                <div className='row f-row'>
                     {
                         posts.map(post =>
                             <div key={post._id} className='col'>

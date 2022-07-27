@@ -1,6 +1,7 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
-import { Container } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
+
 
 const AddHistory = () => {
 
@@ -15,6 +16,7 @@ const AddHistory = () => {
             .then(res => res.json())
             .then(data => setHistroy(data))
     }, [histroy])
+
     const historyDelete = id => {
         console.log(id)
         const url = `http://localhost:5000/historydlt/${id}`
@@ -54,30 +56,37 @@ const AddHistory = () => {
                 <input onBlur={(e) => { setIrem2(e.target.value) }} placeholder='Point-2' className='add' type="text" name='item2' /><br />
                 <input className='sub-btn' type='submit' />
             </form>
-            <Container className='global-no'>
-                <h1 className=''>History Delete</h1>
 
-                {
-                    histroy.map(his => <div className='histroy-part'>
-                        <h2 className='tion'>{his.year}</h2>
-                        <h3 className='h-title'>{his.title}</h3>
-                        <ul>
-                            <li>
-                                {his.description?.item1}
-                            </li>
-                            {his.description.item2 && <li>
-                                {his.description?.item2}
-                            </li>}
-                            {his.description.item3 && <li>
-                                {his.description?.item3}
-                            </li>}
-                        </ul>
-                        <button onClick={() => historyDelete(his._id)} className='dlt-btn'>DELETE</button>
-                    </div>
-                    )
-                }
+            <h1 className=''>History Delete</h1>
+            <table className="table table-dark table-hover">
+                <thead>
+                    <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">Year</th>
+                        <th scope="col">Title</th>
+                        <th scope="col">Action</th>
+                    </tr>
+                </thead>
+                <tbody>
 
-            </Container >
+                    {histroy.map(game => <tr><th scope="row">{game._id.slice(-3)}</th>
+                        <td>{game.year}</td>
+                        <td>{game.title}</td>
+
+                        <td>
+                            <Link to={`updatehistory/${game._id}`}> <button type="button" className="btn btn-primary"><i class="fa-solid fa-pen-to-square"></i></button></Link>
+                            <button onClick={() => historyDelete(game._id)} type="button" className="btn btn-danger ms-2"><i class="fa-solid fa-trash"></i></button>
+
+                        </td> </tr>)}
+
+
+
+                </tbody>
+            </table>
+
+
+
+
         </div>
     );
 };

@@ -39,3 +39,17 @@
     color: white;
     font-weight: 600;
 }
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .contact-banner {
+        padding: 0px;
+        height: 200px;
+    }
+
+    .j-text {
+        font-size: x-large;
+        vertical-align: middle;
+        margin-top: 5rem;
+    }
+}

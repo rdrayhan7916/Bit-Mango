@@ -14,10 +14,13 @@ import Dashboard from './Components/Admin/Dashboard/Dashboard';
 import Addgame from './Components/Admin/AddGame/Addgame';
 import AddFetureGame from './Components/Admin/AddFetureGame/AddFetureGame';
 import AddCEO from './Components/Admin/AddCEO/AddCEO';
-import AddCOO from './Components/Admin/AddCOO/AddCOO';
 import Addcore from './Components/Admin/AddCore/Addcore';
 import AddHistory from './Components/Admin/AddHistory/AddHistory';
-import DeleteGame from './Components/Admin/DeleteGame/DeleteGame';
+import UpdateGame from './Components/Admin/AddGame/UpdateGame';
+import UpdateFGame from './Components/Admin/AddFetureGame/UpdateFGame';
+import UpdateCore from './Components/Admin/AddCore/UpdateCore';
+import UpdateHistory from './Components/Admin/AddHistory/UpdateHistory';
+
 
 function App() {
   return (
@@ -34,13 +37,16 @@ function App() {
           <Route path='publishing' element={<Publishing />} />
           <Route path='jobs' element={<Jobs />} />
           <Route path='contact' element={<Contact />} />
+          <Route path='admin/updategame/:id' element={<UpdateGame />} />
+          <Route path='admin/addgame/updategame/:id' element={<UpdateGame />} />
+          <Route path='admin/addfgame/updatefgame/:id' element={<UpdateFGame />} />
+          <Route path='admin/addcore/updatecore/:id' element={<UpdateCore />} />
+          <Route path='admin/addhistory/updatehistory/:id' element={<UpdateHistory />} />
           <Route path='admin' element={<Dashboard />}>
             <Route path='' element={<Addgame />} />
             <Route path='addgame' element={<Addgame />} />
-            <Route path='deletegame' element={<DeleteGame />} />
             <Route path='addfgame' element={<AddFetureGame />} />
             <Route path='addceo' element={<AddCEO />} />
-            <Route path='addcoo' element={<AddCOO />} />
             <Route path='addcore' element={<Addcore />} />
             <Route path='addhistory' element={<AddHistory />} />
           </Route>
